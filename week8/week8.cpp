@@ -20,40 +20,49 @@ int main()
 
 	// 2
 	int* arr = new int[5];
+
 	for (int i = 0; i < 5; ++i) {
 		arr[i] = i + 1;
 	}
+
 	for (int i = 0; i < 5; i++)
 	{
 		std::cout << arr[i] << ' ';
 	}
+
 	delete[] arr;
 
 	// 3
 	int n;
 	std::cout << "Enter n: ";
 	std::cin >> n;
+
 	int* arr = new int[n];
 	for (int i = 0; i < n; ++i) {
 		arr[i] = i;
 	}
+
 	for (int i = 0; i < n; i++)
 	{
 		std::cout << arr[i] << ' ';
 	}
+
 	delete[] arr;
 
 	// 4
 	int n;
 	std::cout << "Enter n: ";
 	std::cin >> n;
+
 	int* arr = new int [n];
 	int sum = 0;
+
 	for (int i = 0; i < n; ++i) {
 		std::cout << "Enter element " << i << ": ";
 		std::cin >> arr[i];
 		sum += arr[i];
 	}
+
 	std::cout << "Sum: " << sum << std::endl;
 	delete[] arr;
 
@@ -62,8 +71,10 @@ int main()
 	int n;
 	std::cout << "Enter n: ";
 	std::cin >> n;
+
 	int* arr = new int[n];
 	int max;
+
 	for (int i = 0; i < n; i++)
 	{
 		std::cout << "Enter element " << i << ": ";
@@ -73,6 +84,7 @@ int main()
 			max = arr[i];
 		}
 	}
+
 	std::cout << "Max: " << max << std::endl;
 	delete[] arr;
 	
@@ -82,6 +94,7 @@ int main()
 	int a, b;
 	std::cout << "Enter two integers: ";
 	std::cin >> a >> b;
+
 	swap(a, b);
 	std::cout << "Swapped: " << a << ' ' << b;
 
@@ -90,10 +103,12 @@ int main()
 	std::cout << "Enter arr lenght, n: ";
 	std::cin >> n;
 	int* arr = new int[n];
+
 	for (int i = 0; i < n; i++)
 	{
 		arr[i] = rand() % 2001 - 1000;
 	}
+
 	for (int i = 0; i < n; i++)
 	{
 		std::cout << arr[i] << ' ';
